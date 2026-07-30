@@ -8,12 +8,10 @@ Vue 3 + Vite + Pinia + Tailwind + TanStack Table. Talks to ES via Vite proxy `/a
 
 ## Connect (port-forward)
 
-1. Open [bastion console](http://console.bastion-prod.fkcloud.in/#), set DC and app id, get approval.
-2. Install cert and tunnel:
+1. Tunnel to your elastic shard
 
 ```sh
-fkst-cli installCert
-ssh -L 9200:localhost:9200 <bastion-or-host-ip>
+ssh -L 9200:localhost:9200 <host-ip>
 ```
 
 3. Run the app:
