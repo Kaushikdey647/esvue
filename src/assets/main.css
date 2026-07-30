@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #0f1419;
+  --color-surface: #1a1f26;
+  --color-surface-2: #232a33;
+  --color-border: #2d3640;
+  --color-text: #e7ecf1;
+  --color-muted: #8b98a8;
+  --color-green: #3dd68c;
+  --color-yellow: #f5a623;
+  --color-red: #ff5c5c;
+  --color-blue: #4da3ff;
+  --color-amber: #f0b429;
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
